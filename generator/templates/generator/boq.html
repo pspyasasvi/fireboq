@@ -1,0 +1,96 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<h1>FIRE FIGFHTING BOQ</h1>
+
+<h2>FIRE HYDRANT</h2>
+
+<h3>Main Ring dia</h3>
+
+<form action = "{% url 'firehydrant' %}">
+    <select name = 'DIA'> DIA
+        <OPTION VALUE = "200">200</OPTION>
+        <OPTION VALUE = "150">150</OPTION>
+        <OPTION VALUE = "125">125</OPTION>
+        <OPTION VALUE = "100">100</OPTION>
+        <OPTION VALUE = "80">80</OPTION>
+    </select>
+<br>
+
+<h3>EXTERNAL HYDRANT FOR NUMBER OF MTRS</h3>
+
+<form action = "{% url 'firehydrant' %}">
+    <select name = 'hpm'> DIA
+        <OPTION VALUE = "30">30</OPTION>
+        <OPTION VALUE = "35">35</OPTION>
+        <OPTION VALUE = "40">40</OPTION>
+        <OPTION VALUE = "45">45</OPTION>
+
+    </select>
+<br>
+
+<h3>NUMBER OF GATES FOR CALCULATING FIRE INLETS</h3>
+
+<form action = "{% url 'firehydrant' %}">
+    <select name = 'INLET'> INLET
+        <OPTION VALUE = "1">1</OPTION>
+        <OPTION VALUE = "2">2</OPTION>
+        <OPTION VALUE = "3">3</OPTION>
+        <OPTION VALUE = "4">4</OPTION>
+
+    </select>
+<br>
+
+<h3>NUMBER OF LINES IN A RING OF SAME DIA("FOR CALCULATING BUTTERFLY VALVES")</h3>
+
+<form action = "{% url 'firehydrant' %}">
+    <select name = 'LINES'> LINES
+        <OPTION VALUE = "1">1</OPTION>
+        <OPTION VALUE = "2">2</OPTION>
+        <OPTION VALUE = "3">3</OPTION>
+        <OPTION VALUE = "4">4</OPTION>
+        <OPTION VALUE = "5">5</OPTION>
+        <OPTION VALUE = "6">6</OPTION>
+        <OPTION VALUE = "7">7</OPTION>
+        <OPTION VALUE = "8">8</OPTION>
+
+    </select>
+<br>
+
+<h3>NUMBER OF METERS ( RING LINE) </h3>
+
+
+<input type="number"  name="RMT"
+       min="10" max="100000">
+
+<br>
+
+<h3>WHAT EXTRA PERCENTAGE TO BE ADDED TO BOQ </h3>
+<form action = "{% url 'firehydrant' %}">
+    <p>Please select your percentage which to be added, if your choice is zero then dont select anything:</p>
+         <input type="radio" id="5_percentage" name="extra_percentage" value="5">
+         <label for="5_percentage">5_percentage</label><br>
+         <input type="radio" id="10_percentage" name="extra_percentage" value="10">
+         <label for="10_percentage">10_percentage</label><br>
+         <input type="radio" id="15_percentage" name="extra_percentage" value="15">
+         <label for="15_percentage">15_percentage</label><br>
+         <input type="radio" id="20_percentage" name="extra_percentage" value="20">
+         <label for="20_percentage">20_percentage</label><br>
+         <form action = "{% url 'firehydrant' %}">
+
+
+
+
+<br>
+
+
+<form>
+    <input type = 'submit', value = 'Generate BOQ'>
+  </form>
+
+  <br>
+
+
+
+
+
+
+
